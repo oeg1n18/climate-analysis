@@ -1,10 +1,10 @@
 # Todo: Code is a bit unclear
 
-def Fc(x):
-    Y = (x - 32) * (5 / 9)
+def convert_fahr_to_cels(x):
+    cel = (farh - 32) * (5 / 9)
     return Y
 
-def FK(x):
-    y = Fc(x)
-    z = y + 273.15
-    return z
+def convert_fahr_to_K(x):
+    cels = convert_fahr_to_cels(x)
+    kel = cels + 273.15
+    return Kel
