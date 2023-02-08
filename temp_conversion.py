@@ -2,7 +2,11 @@
 
 def convert_fahr_to_cels(x):
     cel = (farh - 32) * (5 / 9)
-    return Y
+    if celsius < -273.15:
+        raise ValueError(
+            f"trying to convert impossible temperature: {fahr}"
+        )
+    return cel
 
 def convert_fahr_to_K(x):
     cels = convert_fahr_to_cels(x)
